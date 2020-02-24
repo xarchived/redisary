@@ -17,7 +17,8 @@ class Redict(object):
         value = self._redis.get(key)
 
         if value:
-            self._redis.expire(key, self._expire)
+            if self._expire:
+                self._redis.expire(key, self._expire)
             return value.decode(self._encoding)
 
         raise KeyError(key)
