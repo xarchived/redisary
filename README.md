@@ -13,7 +13,7 @@ A very simple usage could be like:
 ```python
 from redict import Redict
 
-redis = Redict()
+redis = Redict(host='127.0.0.1', db=0)
 
 redis['k'] = 'data'
 data = redis['k']
