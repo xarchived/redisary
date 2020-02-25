@@ -2,7 +2,7 @@ from setuptools import setup
 import re
 
 with open('redict/__init__.py') as f:
-    version = re.search(r'([0-9]+(\.|-dev|)){3}', f.read()).group(0)
+    version = re.search(r'([0-9]+(.dev|\.|)){3}', f.read()).group(0)
 
 setup(
     name='redict',
