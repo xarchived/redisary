@@ -3,8 +3,18 @@ Redis is a key-value database. Interestingly Python dictionaries are some how ke
 a wrapper that map Python dictionary to Redis server.
 
 ## Installation
+Simply you can install it from PyPi by following command:
+
 ```bash
-pip install -U https://github.com/xurvan/redict/archive/master.zip
+pip install -U redisary
+```
+
+or if you prefer the latest development version, you can install it from the source:
+
+```bash
+git clone https://github.com/xurvan/redisary.git
+cd redisary
+python setup.py install
 ```
 
 ## Quickstart
