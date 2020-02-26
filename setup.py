@@ -20,7 +20,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Xurvan',
     url=f'https://github.com/{owner}/{name}',
-    download_url=f'https://github.com/{owner}/{name}/releases/tag/v{version}',
+    download_url=f'https://github.com/{owner}/{name}/archive/v{version}.zip',
     project_urls={
         'Code': f'https://github.com/{owner}/{name}',
         'Issue tracker': f'https://github.com/{owner}/{name}/issues',
