@@ -17,6 +17,7 @@ setup(
     license='apache-2.0',
     description='Redis as dictionary',
     long_description=readme,
+    long_description_content_type='text/markdown',
     author='Xurvan',
     url=f'https://github.com/{owner}/{name}',
     download_url=f'https://github.com/{owner}/{name}/releases/tag/v{version}',
@@ -32,7 +33,7 @@ setup(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Topic :: Software Development',
-        'License :: Apache License',
+        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python :: 3'
     ],
 )
