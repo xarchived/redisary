@@ -1,7 +1,7 @@
 from redis import Redis
 
 
-class Redict(object):
+class Redisary(object):
     def __init__(self, host: str = 'localhost', port: int = 6379, db: int = 0, encoding: str = 'utf-8',
                  expire: int = None):
         self._redis = Redis(host=host, port=port, db=db, encoding=encoding)

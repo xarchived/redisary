@@ -1,4 +1,4 @@
-# Redict
+# Redisary
 Redis is a key-value database. Interestingly Python dictionaries are some how key-value data structure. So why not write
 a wrapper that map Python dictionary to Redis server.
 
@@ -11,9 +11,9 @@ pip install -U https://github.com/xurvan/redict/archive/master.zip
 A very simple usage could be like:
 
 ```python
-from redict import Redict
+from redisary import Redisary
 
-redis = Redict(host='127.0.0.1', db=0)
+redis = Redisary(host='127.0.0.1', db=0)
 
 redis['k'] = 'data'
 data = redis['k']
@@ -25,9 +25,9 @@ We also could set an expire for all keys of dictionary:
 
 
 ```python
-from redict import Redict
+from redisary import Redisary
 
-redis = Redict(expire=800)
+redis = Redisary(expire=800)
 
 redis['k'] = 'temporary'
 ```

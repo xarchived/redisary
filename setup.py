@@ -2,13 +2,13 @@ import re
 
 from setuptools import setup
 
-with open('redict/__init__.py') as f:
+with open('redisary/__init__.py') as f:
     version = re.search(r'([0-9]+(\.dev|\.|)){3}', f.read()).group(0)
 
 with open('README.md') as f:
     readme = f.read()
 
-name = 'redict'
+name = 'redisary'
 owner = 'xurvan'
 
 setup(
