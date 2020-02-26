@@ -5,12 +5,34 @@ from setuptools import setup
 with open('redict/__init__.py') as f:
     version = re.search(r'([0-9]+(\.dev|\.|)){3}', f.read()).group(0)
 
+with open('README.md') as f:
+    readme = f.read()
+
+name = 'redict'
+owner = 'xurvan'
+
 setup(
-    name='redict',
+    name=name,
     version=version,
+    license='apache-2.0',
     description='Redis as dictionary',
+    long_description=readme,
     author='Xurvan',
-    packages=['redict'],
+    url=f'https://github.com/{owner}/{name}',
+    download_url=f'https://github.com/{owner}/{name}/releases/tag/v{version}',
+    project_urls={
+        'Code': f'https://github.com/{owner}/{name}',
+        'Issue tracker': f'https://github.com/{owner}/{name}/issues',
+    },
+    packages=[name],
     install_requires=['redis'],
     python_requires='>=3.6',
-    zip_safe=False)
+    zip_safe=False,
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development',
+        'License :: Apache License',
+        'Programming Language :: Python :: 3'
+    ],
+)
