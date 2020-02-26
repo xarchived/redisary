@@ -31,3 +31,11 @@ redis = Redict(expire=800)
 
 redis['k'] = 'temporary'
 ```
+
+## TODO
+
+- [x] Map Redis 'string' to Python 'str'
+- [ ] Map Redis 'list' to Python 'list'
+- [ ] Map Redis 'hash' to Python 'dict'
+- [ ] Map Redis 'set' to Python 'set'
+- [ ] Map Redis 'sorted set' to something!
