@@ -1,6 +1,6 @@
 # Redisary
 Redis is a key-value database. Interestingly Python dictionaries are some how key-value data structure. So why not write
-a wrapper that map Python dictionary to Redis server.
+a wrapper that maps Python dictionary to Redis server.
 
 ## Installation
 Simply you can install it from PyPi by following command:
