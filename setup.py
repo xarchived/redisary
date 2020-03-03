@@ -3,14 +3,14 @@ import re
 from setuptools import find_packages
 from setuptools import setup
 
-with open('redisary/__init__.py') as f:
+name = 'redisary'
+owner = 'xurvan'
+
+with open(f'{name}/__init__.py') as f:
     version = re.search(r'([0-9]+(\.dev|\.|)){3}', f.read()).group(0)
 
 with open('README.md') as f:
     readme = f.read()
-
-name = 'redisary'
-owner = 'xurvan'
 
 setup(
     name=name,
