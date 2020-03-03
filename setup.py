@@ -1,5 +1,6 @@
 import re
 
+from setuptools import find_packages
 from setuptools import setup
 
 with open('redisary/__init__.py') as f:
@@ -25,7 +26,7 @@ setup(
         'Code': f'https://github.com/{owner}/{name}',
         'Issue tracker': f'https://github.com/{owner}/{name}/issues',
     },
-    packages=[name],
+    packages=find_packages(),
     install_requires=['redis'],
     python_requires='>=3.6',
     zip_safe=False,
