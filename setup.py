@@ -19,7 +19,7 @@ setup(
     description='Redis as dictionary',
     long_description=readme,
     long_description_content_type='text/markdown',
-    author='Xurvan',
+    author=owner.capitalize(),
     url=f'https://github.com/{owner}/{name}',
     download_url=f'https://github.com/{owner}/{name}/archive/v{version}.zip',
     project_urls={
