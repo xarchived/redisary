@@ -23,5 +23,8 @@ class Redisary(object):
 
         raise KeyError(key)
 
+    def __delitem__(self, key: any) -> int:
+        return self._redis.delete(key)
+
     def __contains__(self, key: any) -> bool:
         return self._redis.exists(key)
